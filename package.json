@@ -6,5 +6,8 @@
   "repository": "git@github.com:jorgeuos/matomo-cookie-modal.git",
   "author": "jorgeuos <jorge.capow@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "babel": "^6.23.0"
+  }
 }
