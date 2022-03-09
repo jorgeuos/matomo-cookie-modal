@@ -7,7 +7,12 @@
   "author": "jorgeuos <jorge.capow@gmail.com>",
   "license": "MIT",
   "private": false,
-  "dependencies": {
-    "babel": "^6.23.0"
+  "dependencies": {},
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
   }
 }
