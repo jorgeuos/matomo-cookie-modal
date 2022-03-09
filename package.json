@@ -1,0 +1,10 @@
+{
+  "name": "matomo-cookie-modal",
+  "version": "1.0.0",
+  "description": "A simple Cookie Modal.",
+  "main": "./js/mcm.js",
+  "repository": "git@github.com:jorgeuos/matomo-cookie-modal.git",
+  "author": "jorgeuos <jorge.capow@gmail.com>",
+  "license": "MIT",
+  "private": false
+}

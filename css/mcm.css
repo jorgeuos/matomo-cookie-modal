@@ -1,0 +1,256 @@
+/**
+* Custom Cookie consent modal
+*/
+
+
+.cookie-wrapping{
+    display: block;
+    box-sizing: border-box;
+    /* background:rgba(38, 176, 127, 0.5); */
+    background:#fff;
+    filter: drop-shadow(0px -1px 2px rgb(0 0 0 / 30%));
+    -webkit-filter: drop-shadow(0px -1px 2px rgb(0 0 0 / 30%));
+    font-family: sans-serif;
+    position:fixed;
+    top:auto;
+    bottom:0;
+    left:0;
+    width:100%;
+    /* height:100vh; */
+    min-height:230px;
+    margin: 0;
+    padding:20px;
+    text-align:center;
+    /* backdrop-filter: blur(5px); */
+}
+
+.cookie-blur{
+    background-color:rgba(255,255,255,0.5);
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    margin: 0;
+    padding:20px;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+}
+
+.cookie-modal{
+    background:#fff;
+    color:rgb(38, 37, 37);
+    position:absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    min-width:80vw;
+    max-width:80vw;
+    min-height: 200px;
+    max-height: 900px;
+    margin: 0;
+    padding:20px;
+    text-align:center;
+}
+
+.cookie-wrapping .mtmo-cookie-button{
+    margin: 10px 15px;
+    padding: 15px 32px;
+    background: linear-gradient(180deg, #A847F9 15.1%, #ef6c84 100%);
+    background: linear-gradient(180deg, #FD93FD 15.1%, #AB47FC 100%);
+    background: linear-gradient(180deg, #9CFCAF 15.1%, #1FB79D 100%);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+}
+
+
+.cookie-wrapping .mtmo-cookie-button:hover{
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%),
+                0 4px 5px 0 rgb(0 0 0 / 14%),
+                0 1px 10px 0 rgb(0 0 0 / 12%);
+}
+.cookie-wrapping .mtmo-cookie-button#cookie-decline{
+    background-color: #e7a615; /* Orange */
+    background: linear-gradient(180deg, #FDA390 0%, #FB4185 100%);
+
+}
+
+.mtmo-close-icon{
+    /* X */
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    top: 10px;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: none;
+    border-radius: 10px;
+    background-color: transparent;
+    background-image: url("../svg/X.svg");
+    background-size: 100%;
+    /* box-shadow: 0 1px 2px rgb(0 0 0 / 30%); */
+    -webkit-filter: drop-shadow(0 1px 2px rgb(0 0 0 / 30%));
+    filter: drop-shadow(0 1px 2px rgb(0 0 0 / 30%));
+}
+
+.mtmo-close-icon:hover{
+    filter:
+    drop-shadow(0 2px 4px rgb(0 0 0 / 10%))
+    drop-shadow(0 4px 5px rgb(0 0 0 / 14%))
+    drop-shadow(0 1px 10px rgb(0 0 0 / 12%));
+    -webkit-filter:
+    drop-shadow(0 2px 4px rgb(0 0 0 / 10%))
+    drop-shadow(0 4px 5px rgb(0 0 0 / 14%))
+    drop-shadow(0 1px 10px rgb(0 0 0 / 12%));
+  }
+
+.accept-checkbox{
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0 8px 0 0;
+}
+
+.accept-checkbox-p{
+    max-width: 364px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.accept-checkbox-label{
+    position:relative;
+    cursor:pointer;
+}
+
+.accept-checkbox-label:before{
+    /* # */
+    content: '';
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    right: auto;
+    left: 0;
+    top: 0;
+    margin: 0 8px -4px 0;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: none;
+    border-radius: 0;
+    background-color: transparent;
+    background-image: url("../svg/checkbox.svg#checkbox-unchecked");
+    background-size: 100%;
+    -webkit-filter: drop-shadow(0 1px 2px rgb(0 0 0 / 30%));
+    filter: drop-shadow(0 1px 2px rgb(0 0 0 / 30%));
+}
+
+.accept-checkbox-label:hover:before{
+    filter:
+    drop-shadow(0 2px 4px rgb(0 0 0 / 10%))
+    drop-shadow(0 4px 5px rgb(0 0 0 / 14%))
+    drop-shadow(0 1px 10px rgb(0 0 0 / 12%));
+    -webkit-filter:
+    drop-shadow(0 2px 4px rgb(0 0 0 / 10%))
+    drop-shadow(0 4px 5px rgb(0 0 0 / 14%))
+    drop-shadow(0 1px 10px rgb(0 0 0 / 12%));
+}
+
+
+.npop-cookie-modal-shadow{
+    -webkit-filter: drop-shadow(0 1px 2px rgb(0 0 0 / 30%));
+    filter: drop-shadow(0 1px 2px rgb(0 0 0 / 30%));
+}
+
+.npop-cookie-modal-shadow-hover{
+    filter:
+    drop-shadow(0 2px 4px rgb(0 0 0 / 10%))
+    drop-shadow(0 4px 5px rgb(0 0 0 / 14%))
+    drop-shadow(0 1px 10px rgb(0 0 0 / 12%));
+    -webkit-filter:
+    drop-shadow(0 2px 4px rgb(0 0 0 / 10%))
+    drop-shadow(0 4px 5px rgb(0 0 0 / 14%))
+    drop-shadow(0 1px 10px rgb(0 0 0 / 12%));
+}
+
+.accept-checkbox:checked ~ .accept-checkbox-label:before{
+    background-image: url("../svg/checked.svg");
+    /* background-image: url("../svg/checkbox.svg#checkbox-checked"); */
+}
+
+.not-accepted{
+  background: -webkit-linear-gradient(#AB47FC, #FD93FD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 1900px){
+    #featured-slider .featured-image img {
+        width: 100%;
+        max-width: 200%;
+    }    
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1024px){
+    #featured-slider .featured-image img {
+        left: -35%;
+    }    
+}
+
+@media screen and (max-width: 1023px){
+    .site-title {
+        font-size: 14px;
+    }
+    .site-description {
+        display:none;
+    }
+    .wp-block-image figure.alignright,
+    .wp-block-image figure.alignleft{
+        max-width: 100%;
+        margin: 0 0;
+        float: none;
+    }
+    .featured-image {
+        height: 526px;
+    }
+    .featured-image img {
+        width: 1008px;
+        height: 526px;
+        top: -100%;
+        left: -50%;
+        right: -50%;
+    }
+    #featured-slider .featured-image img {
+        max-width: 1008px;
+        width: 1008px;
+    }
+}
+
+
+@media screen and (max-width: 640px){
+    .featured-image img {
+        left: -700px;
+    }
+}
+
+
+@media screen and (max-width: 420px){
+    .featured-image img {
+        left: -600px;
+    }
+}
